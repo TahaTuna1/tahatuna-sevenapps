@@ -76,6 +76,7 @@ struct SwiftUIListView: View {
                 }
             } // Swipe Delete function
             .onDelete { indexSet in
+                HapticController.shared.triggerHaptic(of: .heavy)
                 viewModel.users.remove(atOffsets: indexSet)
             }
         }
