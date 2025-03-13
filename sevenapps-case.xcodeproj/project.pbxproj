@@ -6,20 +6,56 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		55A492DF2D82BD9200610A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55A492942D8299AC00610A32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A4929B2D8299AC00610A32;
+			remoteInfo = "sevenapps-case";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		55A4929C2D8299AC00610A32 /* sevenapps-case.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sevenapps-case.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A492DB2D82BD9200610A32 /* sevenapps-caseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sevenapps-caseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		55A492AE2D8299F100610A32 /* Exceptions for "sevenapps-case" folder in "sevenapps-case" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 55A4929B2D8299AC00610A32 /* sevenapps-case */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		55A4929E2D8299AC00610A32 /* sevenapps-case */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				55A492AE2D8299F100610A32 /* Exceptions for "sevenapps-case" folder in "sevenapps-case" target */,
+			);
 			path = "sevenapps-case";
+			sourceTree = "<group>";
+		};
+		55A492DC2D82BD9200610A32 /* sevenapps-caseTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "sevenapps-caseTests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		55A492992D8299AC00610A32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A492D82D82BD9200610A32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				55A4929E2D8299AC00610A32 /* sevenapps-case */,
+				55A492DC2D82BD9200610A32 /* sevenapps-caseTests */,
 				55A4929D2D8299AC00610A32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				55A4929C2D8299AC00610A32 /* sevenapps-case.app */,
+				55A492DB2D82BD9200610A32 /* sevenapps-caseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +108,29 @@
 			productReference = 55A4929C2D8299AC00610A32 /* sevenapps-case.app */;
 			productType = "com.apple.product-type.application";
 		};
+		55A492DA2D82BD9200610A32 /* sevenapps-caseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A492E12D82BD9200610A32 /* Build configuration list for PBXNativeTarget "sevenapps-caseTests" */;
+			buildPhases = (
+				55A492D72D82BD9200610A32 /* Sources */,
+				55A492D82D82BD9200610A32 /* Frameworks */,
+				55A492D92D82BD9200610A32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A492E02D82BD9200610A32 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				55A492DC2D82BD9200610A32 /* sevenapps-caseTests */,
+			);
+			name = "sevenapps-caseTests";
+			packageProductDependencies = (
+			);
+			productName = "sevenapps-caseTests";
+			productReference = 55A492DB2D82BD9200610A32 /* sevenapps-caseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +143,10 @@
 				TargetAttributes = {
 					55A4929B2D8299AC00610A32 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					55A492DA2D82BD9200610A32 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 55A4929B2D8299AC00610A32;
 					};
 				};
 			};
@@ -100,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				55A4929B2D8299AC00610A32 /* sevenapps-case */,
+				55A492DA2D82BD9200610A32 /* sevenapps-caseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		55A4929A2D8299AC00610A32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A492D92D82BD9200610A32 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55A492D72D82BD9200610A32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55A492E02D82BD9200610A32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A4929B2D8299AC00610A32 /* sevenapps-case */;
+			targetProxy = 55A492DF2D82BD9200610A32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		55A492A82D8299AD00610A32 /* Debug */ = {
@@ -255,11 +343,17 @@
 				DEVELOPMENT_TEAM = HYL33J73ZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sevenapps-case/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SevenApps Case";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = customLaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +378,17 @@
 				DEVELOPMENT_TEAM = HYL33J73ZM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sevenapps-case/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SevenApps Case";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = customLaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +399,44 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55A492E22D82BD9200610A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYL33J73ZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahatuna.sevenapps-caseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sevenapps-case.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sevenapps-case";
+			};
+			name = Debug;
+		};
+		55A492E32D82BD9200610A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYL33J73ZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahatuna.sevenapps-caseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sevenapps-case.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/sevenapps-case";
 			};
 			name = Release;
 		};
@@ -319,6 +457,15 @@
 			buildConfigurations = (
 				55A492AB2D8299AD00610A32 /* Debug */,
 				55A492AC2D8299AD00610A32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A492E12D82BD9200610A32 /* Build configuration list for PBXNativeTarget "sevenapps-caseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A492E22D82BD9200610A32 /* Debug */,
+				55A492E32D82BD9200610A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
